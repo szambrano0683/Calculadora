@@ -1,0 +1,88 @@
+body {
+  background: radial-gradient(circle at top, #87aeda, #7981ab);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.calculadora {
+  background: #400202;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: inset 0 0 10px #000, 0 10px 25px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.marca {
+  color: #bbb;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+#pantalla {
+  width: 240px;
+  height: 55px;
+  text-align: right;
+  font-size: 28px;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 18px;
+  background: linear-gradient(145deg, #e9ecef, #dee2e6);
+  box-shadow: inset 2px 2px 6px #c4c4c4, inset -2px -2px 6px #fff;
+  color: #222;
+}
+
+.botones {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 10px;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #f1f1f1;
+  background: linear-gradient(145deg, #333, #111);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.8), inset 0 0 3px rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+
+button:active {
+  transform: translateY(2px);
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.9);
+}
+
+button.operador {
+  background: linear-gradient(145deg, #f59f00, #c97700);
+  color: #fff;
+}
+
+button.funcion {
+  background: linear-gradient(145deg, #495057, #212529);
+}
+
+button.igual {
+  background: linear-gradient(145deg, #40c057, #2b8a3e);
+  grid-row: span 2;
+  height: 130px;
+}
+
+button.cero {
+  grid-column: span 2;
+  width: 130px;
+}
+
+button:hover {
+  filter: brightness(1.2);
+}
