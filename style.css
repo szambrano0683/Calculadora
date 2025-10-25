@@ -9,8 +9,8 @@ body {
 
 .calculadora {
   background: #400202;
-  padding: 20px;
-  border-radius: 25px;
+  padding: 10px;
+  border-radius: 10px;
   box-shadow: inset 0 0 10px #000, 0 10px 25px rgba(0, 0, 0, 0.8);
   display: flex;
   flex-direction: column;
